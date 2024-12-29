@@ -1,0 +1,164 @@
+/* General styleing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(red, green, blue, alpha);
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(red, green, blue, alpha); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: 10one;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30x;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgb(red, green, blue) (300, 300, 300, o.3);
+    color: aqua;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1100;
+}
+
+/* main content */
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+footer {
+    background: rgba(red, green, blue, alpha);
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100;
+}
+
+.songs-library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.songs-library img {
+    width: 30;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Background */
+.home-bg {
+    background: url('image_1.jpeg');
+}
+
+.about-bg {
+    background: url('images_2.jpeg');
+}
+
+.songs-bg {
+    background: url('images_3.jpeg');
+}
+
+.contact-bg {
+    background: url('image_4.jpeg');
+}
+
+/*
+
+/* Background Styles */
+.home-bg, .about-bg, .songs-bg, .contact-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: rgba(red, green, blue, alpha);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 20px;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+    .songs-bg img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1rem;
+    }
+    main {
+        padding: 10px;
+}
+footer {
+    font-size: 0.9rem; 
+}
+}
